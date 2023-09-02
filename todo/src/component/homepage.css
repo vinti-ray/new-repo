@@ -1,0 +1,171 @@
+/* body{
+
+    background: #c9d6ff;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/clouds.png');
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    animation: move-body 20s linear infinite;
+
+  
+
+}
+
+.card{
+
+
+
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px;
+    border-radius: 20px;
+   border: 1px solid #ccc;
+
+
+    box-shadow: 10px 10px 10px 10px rgba(136, 13, 218, 0.5);
+
+  }
+
+  .add-task{
+
+    width: 20%;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 5px 5px rgba(13, 129, 218, 0.5);
+
+  }
+ */
+
+
+
+ /* homepage.css */
+.add-task {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+ 
+ 
+     box-shadow: 10px 10px 10px 10px rgba(136, 13, 218, 0.5);
+  }
+  
+  .card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+ 
+ 
+     box-shadow: 10px 10px 10px 10px rgba(136, 13, 218, 0.5);
+  }
+  
+  .draggable-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .draggable-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .draggable-item:active {
+    cursor: grabbing;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .form-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-container .form-control {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .form-container .btn {
+    border-radius: 10px;
+  }
+  
+  /* Additional Styles for Pending and Done Cards */
+  .pending-card {
+    background-color: #ffeeba;
+  }
+  
+  .done-card {
+    background-color: #d4edda;
+  }
+  
+
+  .item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ba6109;
+  } */
+
+  .item-content {
+    flex: 1; /* This makes the item content expand to fill available space */
+  }
+  
+  /* Style the delete button */
+  .delete-button {
+    background: none;
+    color: #ba6109;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add hover effect for the delete button */
+  .delete-button:hover {
+    background-color: #eae2e2;
+  }
+
+  .update-popup {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 00px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .update-content {
+    /* Add styles for the update form or content */
+  }
