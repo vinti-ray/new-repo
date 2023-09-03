@@ -49,7 +49,7 @@ function Home() {
 
     e.preventDefault();
     axios
-      .post("http://localhost:3001/create", { title: title, task: inputbox })
+      .post("https://gem-square-fahrenheit.glitch.me/create", { title: title, task: inputbox })
       .then(() => {
         window.location.reload();
       });
@@ -57,7 +57,7 @@ function Home() {
 
   const HandleDelete = (id) => {
     console.log(id);
-    axios.post("http://localhost:3001/del", { id: id }).then(() => {
+    axios.post("https://gem-square-fahrenheit.glitch.me/del", { id: id }).then(() => {
       window.location.reload();
     });
   };
@@ -65,7 +65,7 @@ function Home() {
   const HandleUpdate = (e) => {
     // e.preventDefault()
     console.log(e);
-    axios.post("http://localhost:3001/upd", { id: e,title:title,task:inputbox }).then(() => {
+    axios.post("https://gem-square-fahrenheit.glitch.me/upd", { id: e,title:title,task:inputbox }).then(() => {
    
     });
   };
@@ -114,7 +114,7 @@ function Home() {
   };
 
   const HandleCheck = (id) => {
-    axios.post("http://localhost:3001/update", { id: id }).then(() => {
+    axios.post("https://gem-square-fahrenheit.glitch.me/update", { id: id }).then(() => {
       window.location.reload();
     });
   };
